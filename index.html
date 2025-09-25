@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlwaysZakzz Script Store - Zakzzofficiall</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <h2 class="loading-text">Zakzzofficiall</h2>
+            <p class="loading-subtitle">Loading AlwaysZakzz Script Store...</p>
+            <div class="loading-bar">
+                <div class="loading-progress" id="loading-progress"></div>
+            </div>
+            <span class="loading-percent" id="loading-percent">0%</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1><i class="fas fa-code"></i> AlwaysZakzz Script Store</h1>
+                <p>Premium WhatsApp Bot Scripts by Zakzzofficiall</p>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>🔥 OPEN PO SCRIPT ALWAYSZAKZZ V9</h2>
+                    <p>✦ PREMIUM SCRIPT | FULL WORKING | UPDATE PERMANEN</p>
+                    <button class="cta-button" onclick="scrollToPackages()">
+                        <i class="fas fa-shopping-cart"></i> Lihat Paket
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Packages -->
+        <section class="packages" id="packages">
+            <div class="container">
+                <h2 class="section-title">💰 HARGA PAKET</h2>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <h3>No Update</h3>
+                        <div class="price">
+                            <span class="old-price">20K</span>
+                            <span class="current-price">20K</span>
+                            </div>
+                            <ul class="features">
+                                <li bisa jual kembali</li>
+                                </ul>
+                                <button class="buy-button" onclick="selectPackage('no update', '20000')">
+                                    <i class="fas fa-shopping-bag"></i> Pilih Paket
+                                    </button>
+                                   </div>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <h3>free Update</h3>
+                        <div class="price">
+                            <span class="old-price">25K</span>
+                            <span class="current-price">25K</span>
+                            </div>
+                            <ul class="features">
+                                <li bisa jual kembali</li>
+                                </ul>
+                                <button class="buy-button" onclick="selectPackage('free update', '25000')">
+                                    <i class="fas fa-shopping-bag"></i> Pilih Paket
+                                    </button>
+                                   </div>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <h3>Seller</h3>
+                        <div class="price">
+                            <span class="old-price">40K</span>
+                            <span class="current-price">30K</span>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Bisa jual kembali script</li>
+                            <li>✓ Bisa AddDB sendiri sepuasnya</li>
+                            <li>✓ Free update permanen</li>
+                            <li>✓ 80% no enc</li>
+                        </ul>
+                        <button class="buy-button" onclick="selectPackage('Seller', '30000')">
+                            <i class="fas fa-shopping-bag"></i> Pilih Paket
+                        </button>
+                    </div>
+
+                    <div class="package-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <h3>Owner</h3>
+                        <div class="price">
+                            <span class="old-price">50K</span>
+                            <span class="current-price">40K</span>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Bisa jual kembali script</li>
+                            <li>✓ Bisa open reseller + script AddDB</li>
+                            <li>✓ Bisa AddDB sepuasnya</li>
+                            <li>✓ Free update permanen</li>
+                            <li>✓ 80% no enc</li>
+                        </ul>
+                        <button class="buy-button" onclick="selectPackage('Owner', '40000')">
+                            <i class="fas fa-shopping-bag"></i> Pilih Paket
+                        </button>
+                    </div>
+
+                    <div class="package-card">
+                        <h3>Partner</h3>
+                        <div class="price">
+                            <span class="old-price">70K</span>
+                            <span class="current-price">60K</span>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Bisa open reseller & owner</li>
+                            <li>✓ Mendapatkan script AddDB</li>
+                            <li>✓ Bisa AddDB sepuasnya</li>
+                            <li>✓ Free update permanen</li>
+                            <li>✓ 90% no enc</li>
+                        </ul>
+                        <button class="buy-button" onclick="selectPackage('Partner', '60000')">
+                            <i class="fas fa-shopping-bag"></i> Pilih Paket
+                        </button>
+                    </div>
+
+                    <div class="package-card premium">
+                        <div class="premium-badge">Premium</div>
+                        <h3>Moderator</h3>
+                        <div class="price">
+                            <span class="old-price">100K</span>
+                            <span class="current-price">85K</span>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Bisa open semua level</li>
+                            <li>✓ Script AddDB + script khusus JPMCH</li>
+                            <li>✓ Free update permanen</li>
+                            <li>✓ Mendapat 2 admin channel</li>
+                            <li>✓ 90% no enc</li>
+                        </ul>
+                        <button class="buy-button" onclick="selectPackage('Moderator', '85000')">
+                            <i class="fas fa-shopping-bag"></i> Pilih Paket
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">🚀 FITUR UTAMA (337 Fitur)</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>Bot Management</h3>
+                        <p>SETGBONLY, JPMCH, CREATESC, CREATEWEB, Anti Link/Promosi</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-download"></i>
+                        <h3>Downloader</h3>
+                        <p>YouTube, TikTok, Instagram, Facebook, MediaFire, CapCut</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-server"></i>
+                        <h3>Panel & VPS</h3>
+                        <p>Create VPS, Panel Work 2 Server, CloudFlare Protection</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bug"></i>
+                        <h3>Bug Terkini</h3>
+                        <p>BLANK FC, KILL-GB, TRASHCH, ZAKZZ-GB (ALL WORK)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Modal -->
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>📋 Detail Pesanan</h2>
+                <div id="orderDetails">
+                    <p><strong>Paket:</strong> <span id="selectedPackage"></span></p>
+                    <p><strong>Harga:</strong> Rp <span id="selectedPrice"></span></p>
+                </div>
+                
+                <h3>💳 Metode Pembayaran</h3>
+                <div class="payment-methods">
+                    <button class="payment-btn" onclick="selectPayment('dana', '0882015857798')">
+                        <i class="fas fa-mobile-alt"></i> DANA
+                    </button>
+                    <button class="payment-btn" onclick="selectPayment('qris')">
+                        <i class="fas fa-qrcode"></i> QRIS
+                    </button>
+                </div>
+
+                <div id="paymentDetails" class="payment-details hidden">
+                    <div id="danaPayment" class="payment-option hidden">
+                        <h4>💳 Transfer DANA</h4>
+                        <div class="payment-info">
+                            <p><strong>Nomor DANA:</strong></p>
+                            <div class="copy-container">
+                                <span id="danaNumber">0882015857798</span>
+                                <button class="copy-btn" onclick="copyToClipboard('danaNumber')">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <p><strong>Atas Nama:</strong> Kel***</p>
+                            <p><strong>Jumlah Transfer:</strong> Rp <span id="transferAmount"></span></p>
+                        </div>
+                    </div>
+
+                    <div id="qrisPayment" class="payment-option hidden">
+                        <h4>📱 Scan QRIS</h4>
+                        <div class="qris-container">
+                            <img src="https://img1.pixhost.to/images/8890/643310990_alwayszakzz.jpg" alt="QRIS Code" class="qris-image">
+                            <p>Scan QR Code di atas dengan aplikasi pembayaran Anda</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upload-section">
+                    <h4>📸 Upload Bukti Transfer</h4>
+                    <input type="file" id="proofUpload" accept="image/*" onchange="handleProofUpload()">
+                    <div id="proofPreview" class="proof-preview hidden"></div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="confirm-btn" onclick="confirmOrder()" id="confirmBtn" disabled>
+                        <i class="fas fa-check"></i> Konfirmasi Pesanan
+                    </button>
+                    <button class="whatsapp-btn" onclick="joinWhatsAppGroup()" id="whatsappBtn" disabled>
+                        <i class="fab fa-whatsapp"></i> Join Grup WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">📞 KONTAK / TRX</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fab fa-telegram"></i>
+                        <h3>Telegram</h3>
+                        <a href="https://t.me/AlwaysZakzz" target="_blank">@AlwaysZakzz</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>Grup WhatsApp</h3>
+                        <a href="https://chat.whatsapp.com/G9Dd9DdVfOX18zCzK5KmAB" target="_blank">Join Grup</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Testimoni</h3>
+                        <a href="https://whatsapp.com/channel/0029Vb4GJoH0LKZDtKkFTA1Y" target="_blank">Channel Testimoni</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 AlwaysZakzz Script Store - by Zakzzofficiall</p>
+                <p>✦ Premium Script | Full Working | Update Permanen</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
